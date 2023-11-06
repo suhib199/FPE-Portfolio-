@@ -319,6 +319,19 @@ body {
 
 }
 
+.Time-Line-Content a {
+
+    text-decoration: none;
+}
+
+.Time-Line-Content small,
+p,
+ul {
+
+    color: var(--lightColor);
+}
+
+
 /* 
 ------------------------------------------Project------------------------------------------------- */
 .Header-Projects {
@@ -438,26 +451,78 @@ body {
 
 /* -----------------------------------------footer--------------------------------------------- */
 footer {
-    background-color: #fff;
+    background-color: var(--BackgroundColor3);
     margin-top: 200px;
+    padding: 13px;
 
 }
 
-footer img {
-    width: 50px;
-    position: relative;
-    left: 40%;
-    margin-left: 20px;
+.Icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Icons a {
+
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--lightColor);
+    margin: 13px;
+    border-radius: 50%;
 }
 
 
-footer span {
-    color: #ff274b;
-    position: relative;
-    bottom: 15px;
-    left: 40%;
+.Icons a i {
+
+    color: var(--BackgroundColor);
+    font-size: 1.5rem;
+}
+
+.Icons a:hover {
+
+    background-color: var(--BackgroundColor3);
+    transition: .5s;
 
 }
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    list-style: none;
+}
+
+footer ul li a:hover {
+    color: var(--thirdTextColor);
+
+}
+
+footer a {
+    color: var(--lightColor);
+    margin: 20px;
+    text-decoration: none;
+    font-size: .9rem;
+
+}
+
+.Copy-Right {
+
+    background-color: var(--BackgroundColor2);
+    width: 100%;
+    padding: 20px;
+
+}
+
+.Copy-Right {
+
+    font-size: .9rem;
+    text-align: center;
+
+}
+
+
+
 
 
 
@@ -615,6 +680,7 @@ footer span {
 @media screen and (max-width: 1046px) {
     .Header-Projects {
         margin-left: 0;
+        margin-top: 80px;
 
     }
 
@@ -627,5 +693,37 @@ footer span {
     .frame {
         margin-bottom: 40px;
 
+    }
+
+    /* 
+    ------------------------------------------------------Footer------------------------------ */
+    footer {
+
+        padding-bottom: 0;
+    }
+
+    footer ul li a {
+
+
+        margin-right: 23px;
+    }
+
+    footer ul li a {
+
+
+        font-size: 8px;
+
+    }
+
+    .Copy-Right {
+
+        font-size: 10px;
+    
+
+    }
+
+    footer .Icons i{
+
+        font-size: 16px;
     }
 }
